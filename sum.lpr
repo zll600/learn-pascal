@@ -10,19 +10,25 @@ var
     Average : real;
 
 begin
-    A := 45;
-    B := 7;
-    C := 68;
-    D := 2;
-    E := 34;
+    write('Enter the first number: ');
+    readln(A);
+    write('Enter the second number: ');
+    readln(B);
+    write('Enter the third number: ');
+    readln(C);
+    write('Enter the fourth number: ');
+    readln(D);
+    write('Enter the fifth number: ');
+    readln(E);
     Sum := A + B + C + D + E;
     Average := Sum / NumberOfIntergers;
     writeln ('Number of integers = ', NumberOfIntergers);
-    writeln('Number1 = ', A);
-    writeln('Number2 = ', B);
-    writeln('Number3 = ', C);
-    writeln('Number4 = ', D);
-    writeln('Number5 = ', E);
-    writeln('Sum = ', Sum);
-    writeln('Average = ', Average);
+    writeln('Number1 = ', A:8);
+    writeln('Number2 = ', B:8);
+    writeln('Number3 = ', C:8);
+    writeln('Number4 = ', D:8);
+    writeln('Number5 = ', E:8);
+    writeln('===================');
+    writeln('Sum = ', Sum:12);
+    writeln('Average = ', Average:10:1);
 end.
